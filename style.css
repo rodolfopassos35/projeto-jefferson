@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+header {
+    width:100%;
+    height:80px;
+    position:fixed;
+    background-color:#fff;
+}
+.conteudo-topo {
+    width:90%;
+    height:100%;
+    margin:0 auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    display:flex;
+    align-items:center;
+}
+.logo img {
+    width:70px;
+}
+.logo p{
+    color:#000;
+    font-size:12px;
+    font-weight:bold;
+    text-shadow:1px 1px 3px gray;
+} 
+.links-topo a {
+    text-decoration: none;
+    padding:0 20px;
+}
+.link-instagram,
+img{
+    width:30px;
+}
+.link-instagram img:hover {
+    transform: scale(1.2);
+    transition:transform 0.3s ease-in-out;
+}
+@keyframes pulse {
+    0% {
+        transform: scale(1.8);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.link-whats img {
+    animation: pulse 2s infinite; 
+}
+/* seção principal */
+main {
+    width:100%;
+    height:100vh;
+    background-image: url('imagem/istockphoto-1256999311-612x612.jpg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+    display:flex;
+}
+.conteudo-main {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    width:100%;
+    height:100vh;
+    background-color: #1b131370;
+    border-radius:5px;
+}
+h1 {
+    color:#fff;
+    font-size:50px;
+}
+p {
+    font-size:35px;
+    color:#fff;
+    font-style: italic;
+}
+.conteudo-main .contato {
+    background-color: red;
+    color:black;
+    padding:10px 40px;
+    text-decoration: none;
+    margin-bottom:10px;
+}
+.contato:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out; 
+    box-shadow: 0 0 5px #fff;
+}
+@media (min-width:200px) and (max-width:500px){
+    .logo{
+        display:flex;
+    }
+    .links-topo {
+        display:flex;
+        justify-content: space-around;
+        width:50px;
+    }
+    .link-instagram img {
+        width:20px;
+    }
+    .link-whats img {
+        position:fixed;
+        right:35px;
+        bottom: 35px;
+        border-radius: 250px;
+        box-shadow: 0 0 20px 10px green;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .conteudo-main p {
+        font-size:15px;
+        padding:20px 0;
+    }
+}

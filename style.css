@@ -97,7 +97,7 @@ p {
     transition: transform 0.3s ease-in-out; 
     box-shadow: 0 0 5px #fff;
 }
-@media (min-width:200px) and (max-width:500px){
+@media (min-width:200px) and (max-width:768px){
     .logo{
         display:flex;
     }
